@@ -1,0 +1,12 @@
+server:
+  port: 1299
+spring: #注册中心起名字
+  application:
+    name: zuul-server
+zuul:
+  ignoredServices: '*'
+  routes:
+    plat:
+      path: /plat/** #平台服务的请求路径
+      serviceId: plat-service
+  prefix: /services #前缀
