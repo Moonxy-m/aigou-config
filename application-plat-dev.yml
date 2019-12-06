@@ -1,0 +1,5 @@
+server:
+  port: 7001
+spring: #注册中心起名字
+  application:
+    name: plat-service
